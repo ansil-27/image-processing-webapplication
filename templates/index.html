@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>Image processing web application</title>
+    <link rel="stylesheet" href="/static/style.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+</head>
+<body>
+    <header class="navbar">
+		<h2><a href="#"><img id="logo" src="/static/images/logo.png"></a></h2> 
+		<ul class="nav">  
+			<li><a href="#">Home</a></li>
+			<li><a href="#about">About</a></li> 
+			<li><a href="#services">Services</a></li>
+			<li><a href="#contact">Contact</a></li> 
+		</ul>
+	</header>
+	
+	<section class="box">  
+		<video src="/static/images/4.mp4" autoplay muted loop></video>
+		<h1>Image Processing Web App with Cartoon, Mosaic, and Sketch Effects</h1> 
+		<h3>Apply effects</h3>
+		
+        <form id="upload-form" enctype="multipart/form-data">
+            <!-- Button to trigger file input -->
+            <label for="file-input" class="upload-btn">Upload Image</label>
+            <!-- Input field for selecting an image file -->
+            <input id="file-input" type="file" name="file" accept=".jpg, .jpeg, .png" required onchange="displayFileName()">
+            <!-- Placeholder for displaying the selected file name -->
+            <span class="upload-text" id="file-name">No file chosen</span>
+            <!-- Button to trigger image processing -->
+            <button id="process-btn" type="button" class="upload-btn">Process Image</button>
+        </form>
+        <br><br>
+        <div id="result" class="result-container"></div>
+        <br><br><br><br><br><br><br><br><br><br>
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="footerNav">
+                    <ul><li><a href="">Home</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Our Team</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2024; Designed by <span class="designer">S6/Group-6</span></p>
+            </div>
+        </footer>
+	</section>
+    <!-- Placeholder for displaying the processed images -->
+    
+
+
+    <!-- Linking the JavaScript file for client-side interaction -->
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
