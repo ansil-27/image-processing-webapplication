@@ -1,1 +1,1 @@
-# image-processing-webapplication
+# image-processing-web-application
